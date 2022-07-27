@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+
+<ngx-smart-modal #myModal 
+                 modalNavigation
+                 identifier="modal-example"
+                 [customClass]="'nsm-dialog-animation-ltr'">
+  <h1 *ngIf="myModal.isVisible()">Modal Content</h1>
+</ngx-smart-modal>
